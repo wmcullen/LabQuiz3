@@ -10,10 +10,10 @@ public class Division {
 
         long temp = absA;
         long result = 0;
-        while (temp >= 0) {
+        while (temp > 0) {
             temp -= absB;
             if (temp >= 0)
-                result--;
+                result++;
         }
         return (a > 0 && b > 0 || a < 0 && b < 0) ? result : -result;
     }
